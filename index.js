@@ -38,3 +38,13 @@ function sendEmail() {
             console.error("Failed to send email:", error);
         });
 }
+
+// Toggle functionality for Aside Bar
+const toggleButton = document.querySelector('#toggle-btn');
+const aside = document.querySelector('aside');
+
+if (toggleButton && aside) {
+    toggleButton.addEventListener('click', () => {
+        aside.classList.toggle('active');
+    });
+}
