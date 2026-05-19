@@ -23,7 +23,6 @@
             <div class="logo">
                 <h1 id="logo">TECHDUCK</h1>
             </div>
-            <button id="toggle-btn" aria-label="Toggle Menu">☰</button>
         </nav>
     </header>
     <aside>
@@ -174,12 +173,28 @@
                         </form>
                     </div>
                 </div>
+            </div>
         </section>
 
+        <!-- Back to Top Button -->
+        <a href="#Home" class="back-to-top" style="display: none; position: fixed; bottom: 20px; right: 20px; padding: 10px 15px; background-color: #0a1931; color: #fff; border-radius: 5px; text-decoration: none;">Top</a>
 
     </main>
 
     <script src="index.js">
+    </script>
+    <script>
+        // Back to Top functionality
+        const backToTopBtn = document.querySelector('.back-to-top');
+
+        window.addEventListener('scroll', () => {
+            // Show button when user scrolls to the bottom of the page
+            if (window.innerHeight + window.scrollY >= document.body.scrollHeight) {
+                backToTopBtn.style.display = 'block';
+            } else {
+                backToTopBtn.style.display = 'none';
+            }
+        });
     </script>
 </body>
 
