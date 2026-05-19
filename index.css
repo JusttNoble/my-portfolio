@@ -201,7 +201,7 @@ width: 100%;
     word-wrap: break-word;
 }
 .service-card p {
-   line-height: 1.5;
+    font-size: 0.9rem;
     line-height: 1.5;
 }
 .service-icon{
@@ -230,7 +230,7 @@ width: 100%;
 .tools-grid{
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(autofit, minmax(150px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
     gap: 15px;
 }
 .tools-card{
