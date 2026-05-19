@@ -201,8 +201,8 @@ width: 100%;
     word-wrap: break-word;
 }
 .service-card p {
-   font-size: o.9rem ;
    line-height: 1.5;
+    line-height: 1.5;
 }
 .service-icon{
     font-size: 30px;
@@ -289,7 +289,7 @@ width: 100%;
 .contact-content{
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(autofit, minmax(150px , 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px , 1fr));
     gap: 15px;
 }
 .contact-info{
@@ -341,4 +341,81 @@ footer{
     height: 100px;
     width: 100%;
     background-color: black;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .wrapper{
+        gap: 2rem;
+    }
+    .container{
+        min-height: 380px;
+    }
+    .intro p{
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 768px) {
+    aside{
+        display: none;
+    }
+    main{
+        margin-left: 0;
+        padding-top: 80px; /* space for fixed header */
+    }
+    header nav{
+        padding: 8px 10px;
+    }
+    #logo{
+        letter-spacing: 6px;
+        font-size: 16px;
+    }
+    .first-section .box{
+        margin-top: 100px;
+    }
+    .wrapper{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.25rem;
+        padding: 0.5rem;
+    }
+    img{
+        max-width: 320px;
+        width: 90%;
+    }
+    .container{
+        padding: 12px;
+        min-height: auto;
+    }
+    .service-card h2{
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #logo{
+        font-size: 14px;
+        letter-spacing: 4px;
+    }
+    .wrapper{
+        gap: 1rem;
+    }
+    .service-card{
+        padding: 14px;
+    }
+    .tools-grid{
+        grid-template-columns: 1fr;
+    }
+    .services-grid{
+        grid-template-columns: 1fr;
+    }
+    .contact-content{
+        grid-template-columns: 1fr;
+    }
+    footer{
+        height: auto;
+        padding: 20px 0;
+    }
 }
