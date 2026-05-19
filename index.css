@@ -357,12 +357,22 @@ footer{
 }
 
 @media (max-width: 768px) {
-    aside{
-        display: none;
+    aside {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 0; /* Start collapsed */
+        overflow: hidden;
+        background-color: #0a1931;
+        transition: width 0.3s ease;
     }
-    main{
-        margin-left: 0;
-        padding-top: 80px; /* space for fixed header */
+    aside.active {
+        width: 200px; /* Expand on toggle */
+    }
+
+    main {
+        margin-left: 50px; /* Adjust for partially visible aside */
     }
     header nav{
         padding: 8px 10px;
