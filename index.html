@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "5ilgxyQPF6gSEQBza",
+            });
+        })();
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1 id="logo">TECHDUCK</h1>
+            </div>
+        </nav>
+    </header>
+    <aside>
+        <ul class="nav">
+            <li class="list"><a href="#Home">Home</a></li>
+            <li class="list"><a href="#Services">services</a></li>
+            <li class="list"><a href="#tools">Tools</a></li>
+            <li class="list"><a href="#Projects">Projects</a></li>
+            <li class="list"><a href="#Contact">Contact</a></li>
+
+        </ul>
+    </aside>
+    <main>
+
+        <section class="first-section" id="Home">
+            <div class="box">
+                <div class="container">
+                    <div class="wrapper">
+                        <div class="profile">
+                            <img src="bench-accounting-MGaFENpDCsw-unsplash.jpg" alt="">
+                        </div>
+                        <div class="intro">
+                            <h1>ABOUT ME</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius voluptatum, accusamus
+                                corrupti nesciunt ratione non excepturi ab, doloremque suscipit et neque obcaecati
+                                consequatur illo error ipsam, expedita sequi repudiandae inventore.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section class="second-section" id="Services">
+            <div class="box">
+                <div class="container">
+                    <div class="service-header">
+                        <h1>Services</h1>
+                        <p>We help brands grow online with smart development, polished design, and business-focused
+                            strategy.</p>
+                    </div>
+                    <div class="services-grid">
+                        <article class="service-card">
+                            <div class="service-icon">&#9881;</div>
+                            <h2>Web Development</h2>
+                            <p>Fast, responsive websites built for performance, accessibility, and modern workflows.
+                            </p>
+                        </article>
+                        <article class="service-card">
+                            <div class="service-icon">&#128187;</div>
+                            <h2>UI/UX Design</h2>
+                            <p>Clean, user-friendly interfaces that make interactions intuitive and memorable.</p>
+                        </article>
+                        <article class="service-card">
+                            <div class="service-icon">&#128200;</div>
+                            <h2>Digital Strategy</h2>
+                            <p>Practical planning and execution to help your business reach the right audience
+                                online.</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="third-section" id="tools">
+            <div class="box">
+                <div class="container">
+                    <div class="tools-header">
+                        <h1>Tools & Technologies</h1>
+                        <p>
+                            Technologies and tools i use for building modern, responsive
+                            and scalable full stack web application
+                        </p>
+                    </div>
+                    <div class="tools-grid">
+                        <div class="tools-card">
+                            <h2>Front End</h2>
+                            <p>HTML5, CSS3, Javascript, react</p>
+                        </div>
+                        <div class="tools-card">
+                            <h2>Back End</h2>
+                            <p>Node.js, Express.js, REST APIs</p>
+                        </div>
+                        <div class="tools-card">
+                            <h2>Data Base</h2>
+                            <p>MongoDB, MySQL, Firebase</p>
+                        </div>
+                        <div class="tools-card">
+                            <h2>Version Control</h2>
+                            <p>Git, GithHub</p>
+                        </div>
+                        <div class="tools-card">
+                            <h2>UI/UX</h2>
+                            <p>Figma, Responsive Designs</p>
+                        </div>
+                        <div class="tools-card">
+                            <h2>Deployment</h2>
+                            <p>Vercel, Netlify, Render</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="forth-section" id="Projects">
+            <div class="box">
+                <div class="container">
+                    <h1>projects</h1>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="fifth-section" id="Contact">
+            <div class="box">
+                <div class="container">
+                    <div class="contact-header">
+                        <h1>Contact Us</h1>
+                        <p>
+                            Have a project idea or want to work together
+                            feel free to send me a message.
+                        </p>
+                    </div>
+                    <div class="contact-content">
+                        <div class="contact-info">
+                            <div class="info-box">
+                                <h2>Email</h2>
+                                <p>techduck@gmail.com</p>
+                            </div>
+                            <div class="info-box">
+                                <h2>Phone</h2>
+                                <p>+234 909 0941 4270</p>
+                            </div>
+                            <div class="info-box">
+                                <h2>Location</h2>
+                                <p>Lagos, Nigeria</p>
+                            </div>
+                        </div>
+                        <form class="contact-form">
+                            <input type="text" placeholder="Your Name" id="name">
+                            <input type="email" placeholder="Your Email" id="email">
+                            <input type="text" placeholder="subject" id="subject">
+                            <textarea rows="6" placeholder="Your Message" id="message"></textarea>
+                            <button type="submit" onclick="sendEmail()">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+        </section>
+
+
+    </main>
+
+    <script src="index.js">
+    </script>
+</body>
+
+
+</html>
